@@ -300,7 +300,7 @@ def three_prompt(**kwargs):
     if kwargs.get('filter') is None:
         return f"Generate 5 problem statements given these scopes: {kwargs.get('field1')}, {kwargs.get('field2')}, {kwargs.get('field3')}. Strictly give the problem statement directly, not solutions."
     else:
-        return f"Generate 5 problem statements given these scopes: {kwargs.get('field1')}, {kwargs.get('field2')}, {kwargs.get('field3')}. Take note of this specification {kwargs.get('filter')}. Strictly give the problem statement directly, not solutions."  
+        return f"Generate 5 problem statements given these scopes: {kwargs.get('field1')}, {kwargs.get('field2')}, {kwargs.get('field3')}. Take note of this specification {kwargs.get('filter')}. Strictly give the problem statement directly, not solutions."
 
 def two_prompt(**kwargs):
     if kwargs.get('filter') is None:
@@ -369,5 +369,4 @@ SYSTEM_PROMPTS = {
         "Please ensure that you only fill in the capitalized sections with appropriate details and follow the structure exactly as outlined."
     """
 }
-
 
